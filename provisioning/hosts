@@ -1,0 +1,5 @@
+[vagrants]
+192.168.33.10
+
+[vagrants:vars]
+ansible_python_interpreter="/usr/bin/python2"
