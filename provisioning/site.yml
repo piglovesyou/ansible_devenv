@@ -3,5 +3,8 @@
   become: true
   user: vagrant
   tasks:
-    - name: install packages zsh
-      apt: name=zsh update_cache=yes
+    - name: install package-query (a yaourt dependency)
+      include: aur/pkg.yml pkg_name=package-query
+
+    - name: install yaourt
+      include: aur/pkg.yml pkg_name=yaourt

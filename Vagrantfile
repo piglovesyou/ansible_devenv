@@ -28,6 +28,12 @@ Vagrant.configure("2") do |config|
   # using a specific IP.
   config.vm.network "private_network", ip: "192.168.33.10"
 
+  # config.vm.provision "ansible" do |ansible|
+  #   ansible.playbook = "provisioning/site.yml"
+  #   ansible.inventory_path = "provisioning/hosts"
+  #   ansible.limit = 'all'
+  # end
+
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
